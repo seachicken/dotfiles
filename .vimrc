@@ -3,6 +3,11 @@ if &compatible
   set nocompatible
 endif
 
+" reset augroup
+augroup MyAutoCmd
+  autocmd!
+augroup END
+
 " === dein settings ===
 " 参照パスの設定 
 let s:cache_home = empty($XDG_CACHE_HOME) ? expand('~/.vim') : $XDG_CACHE_HOME
@@ -42,10 +47,7 @@ endif
 " ======================
 
 " シンタックスハイライト
-:syntax on
+syntax on
 
 " 行番号の表示
 set number
-
-" カラースキーマの指定
-colorscheme desert
