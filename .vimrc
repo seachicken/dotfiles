@@ -51,3 +51,10 @@ syntax on
 
 " 行番号の表示
 set number
+
+" インデントの設定 
+set expandtab
+set tabstop=2
+set softtabstop=2
+set shiftwidth=2
+set autoindent
