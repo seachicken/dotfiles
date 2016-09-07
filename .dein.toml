@@ -20,3 +20,6 @@ hook_add = '''
   " 但し Colorscheme イベントの発生が抑制されないよう nented を付ける。
   au MyAutoCmd VimEnter * nested colorscheme hybrid
 '''
+
+[[plugins]] # インデントの色
+repo = 'nathanaelkane/vim-indent-guides'
