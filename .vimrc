@@ -46,6 +46,9 @@ if dein#check_install()
 endif
 " ======================
 
+" バックアップ(.swp）不要 
+set nobackup
+
 " シンタックスハイライト
 syntax on
 
