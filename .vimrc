@@ -47,7 +47,7 @@ endif
 " ======================
 
 " バックアップ(.swp）不要 
-set nobackup
+set noswapfile
 
 " シンタックスハイライト
 syntax on
