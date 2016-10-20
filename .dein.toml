@@ -8,6 +8,13 @@ build = 'make'
 [[plugins]]
 repo = 'Shougo/neosnippet-snippets'
 
+[[plugins]] # カーソル位置によってftを自動切り替え
+repo = 'osyo-manga/vim-precious'
+depends = ['context_filetype.vim']
+
+[[plugins]] # カーソル位置のftを判定
+repo = 'Shougo/context_filetype.vim'
+
 [[plugins]] # toml syntax
 repo = 'cespare/vim-toml'
 on_ft = 'toml'
