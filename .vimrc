@@ -65,3 +65,8 @@ let g:indent_guides_enable_on_vim_startup = 1
 let g:indent_guides_auto_colors = 0
 autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  ctermbg=236 
 autocmd VimEnter,Colorscheme * :hi IndentGuidesEven ctermbg=black 
+
+" 閉じ括弧補完
+inoremap {<Enter> {}<Left><CR><ESC><S-o>
+inoremap [<Enter> []<Left><CR><ESC><S-o>
+inoremap (<Enter> ()<Left><CR><ESC><S-o>
