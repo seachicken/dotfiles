@@ -49,6 +49,9 @@ endif
 " バックアップ(.swp）不要 
 set noswapfile
 
+" ステータスラインの表示
+set laststatus=2
+
 " シンタックスハイライト
 syntax on
 

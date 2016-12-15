@@ -28,9 +28,17 @@ repo = 'w0ng/vim-hybrid'
 hook_add = '''
   set background=dark
   " colorscheme 設定は source 後に行う必要があるので VimEnter で行う。
-  " 但し Colorscheme イベントの発生が抑制されないよう nented を付ける。
+  " 但し Colorscheme イベントの発生が抑制されないよう nested を付ける。
   au MyAutoCmd VimEnter * nested colorscheme hybrid
 '''
 
 [[plugins]] # インデントの色
 repo = 'nathanaelkane/vim-indent-guides'
+
+[[plugins]] # ステータスラインの色
+repo = 'itchyny/lightline.vim'
+hook_add = '''
+  let g:lightline = {
+    \ 'colorscheme': 'wombat'
+    \}
+'''
