@@ -46,9 +46,6 @@ if dein#check_install()
 endif
 " ======================
 
-" キーマップ
-imap <c-j> <esc>
-
 " バックアップ(.swp）不要 
 set noswapfile
 
