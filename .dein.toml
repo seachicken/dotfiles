@@ -15,6 +15,21 @@ repo = 'Shougo/neosnippet-snippets'
 repo = 'Shougo/neocomplete.vim'
 on_i = 1
 
+# Markdown編集
+[[plugins]]
+repo = 'godlygeek/tabular'
+[[plugins]]
+repo = 'plasticboy/vim-markdown'
+
+# Markdownプレビュー
+[[plugins]]
+repo = 'kannokanno/previm'
+hook_add = '''
+  let g:previm_open_cmd = 'open -a Google\ Chrome'
+'''
+[[plugins]]
+repo = 'tyru/open-browser.vim'
+
 [[plugins]] # カーソル位置によってftを自動切り替え
 repo = 'osyo-manga/vim-precious'
 depends = ['context_filetype.vim']
