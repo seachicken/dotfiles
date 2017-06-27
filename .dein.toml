@@ -11,9 +11,13 @@ repo = 'ConradIrwin/vim-bracketed-paste'
 [[plugins]]
 repo = 'Shougo/neosnippet-snippets'
 
-[[plugins]] # 補完
+# 補完
+[[plugins]]
 repo = 'Shougo/neocomplete.vim'
 on_i = 1
+[[plugins]] # JavaScript
+repo = 'ternjs/tern_for_vim'
+build = 'npm install'
 
 # Markdown編集
 [[plugins]]
