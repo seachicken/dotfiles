@@ -49,6 +49,9 @@ endif
 " バックアップ(.swp）不要 
 set noswapfile
 
+" yankをクリップボードにもコピー
+set clipboard=unnamed
+
 " ステータスラインの表示
 set laststatus=2
 
