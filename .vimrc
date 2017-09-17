@@ -20,8 +20,6 @@ if !isdirectory(s:dein_repo_dir)
 endif
 execute 'set runtimepath^=' . s:dein_repo_dir
 
-call dein#begin(s:dein_dir)
-
 if dein#load_state(s:dein_dir)
   call dein#begin(s:dein_dir)
 
@@ -33,11 +31,6 @@ if dein#load_state(s:dein_dir)
 
   call dein#end()
   call dein#save_state()
-endif
-
-" プラグインを非同期でインストールする為、先にインストールする
-if dein#check_install(['vimproc'])
-  call dein#install(['vimproc'])
 endif
 
 " プラグインのインストール
