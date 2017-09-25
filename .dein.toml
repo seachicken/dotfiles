@@ -1,6 +1,9 @@
 [[plugins]]
 repo = 'Shougo/dein.vim'
 
+[[plugins]] # 閉じ括弧補完
+repo = 'Townk/vim-autoclose'
+
 [[plugins]] # クリップボード貼り付けによるインデント崩れを抑える
 repo = 'ConradIrwin/vim-bracketed-paste'
 
