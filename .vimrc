@@ -39,9 +39,6 @@ if dein#check_install()
 endif
 " ======================
 
-" Gitのコミットコメントの編集時にエラーになったので追加
-colorscheme default
-
 " バックアップ(.swp）不要 
 set noswapfile
 
