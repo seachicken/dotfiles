@@ -24,4 +24,6 @@ RPROMPT+='${vcs_info_msg_0_}'
 function chpwd() { ls -1 }
 
 # 環境変数の適用
-source ~/.bash_profile
+if [ -e ~/.bash_profile ]; then
+  source ~/.bash_profile
+fi
