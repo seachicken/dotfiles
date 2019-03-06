@@ -22,6 +22,10 @@ RPROMPT+='${vcs_info_msg_0_}'
 
 alias ll='ls -la'
 
+## === Keybinding ===
+
+bindkey '^R' peco-history-selection
+
 ## === Other ===
 
 # cdした後で自動的にlsする
@@ -31,3 +35,11 @@ function chpwd() { ls -1 }
 if [ -e ~/.bash_profile ]; then
   source ~/.bash_profile
 fi
+
+# peco
+function peco-history-selection() {
+    BUFFER=`history -n 1 | tail -r  | awk '!a[$0]++' | peco`
+    CURSOR=$#BUFFER
+    zle reset-prompt
+}
+zle -N peco-history-selection
