@@ -18,6 +18,10 @@ RPROMPT=""
 RPROMPT+='%F{green}%~%f'
 RPROMPT+='${vcs_info_msg_0_}'
 
+## === Alias ===
+
+alias ll='ls -la'
+
 ## === Other ===
 
 # cdした後で自動的にlsする
