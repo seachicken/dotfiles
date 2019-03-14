@@ -1,13 +1,25 @@
-## === zsh options ===
+# === zsh options ===
 
-## 補完機能の強化
+# 補完機能の強化
 autoload -U compinit
 compinit
 
-## 直前と同じコマンドをヒストリに追加しない
+# 履歴ファイルの保存先
+export HISTFILE=${HOME}/.zsh_history
+
+# メモリに保存される履歴の件数
+export HISTSIZE=1000
+
+# 履歴ファイルに保存される履歴の件数
+export SAVEHIST=100000
+
+# 直前と同じコマンドをヒストリに追加しない
 setopt hist_ignore_dups
 
-## === Prompt ===
+# 開始と終了時刻を記録
+#setopt EXTENDED_HISTORY
+
+# === Prompt ===
 
 autoload -Uz vcs_info
 setopt prompt_subst
@@ -18,23 +30,15 @@ RPROMPT=""
 RPROMPT+='%F{green}%~%f'
 RPROMPT+='${vcs_info_msg_0_}'
 
-## === Alias ===
+# === Alias ===
 
 alias ll='ls -la'
 
-## === Keybinding ===
+# === Keybinding ===
 
 bindkey '^R' peco-history-selection
 
-## === Other ===
-
-# cdした後で自動的にlsする
-function chpwd() { ls -1 }
-
-# 環境変数の適用
-if [ -e ~/.bash_profile ]; then
-  source ~/.bash_profile
-fi
+# === Plugins ===
 
 # peco
 function peco-history-selection() {
@@ -43,3 +47,13 @@ function peco-history-selection() {
     zle reset-prompt
 }
 zle -N peco-history-selection
+
+# === Other ===
+
+# 環境変数の適用
+if [ -e ~/.bash_profile ]; then
+  source ~/.bash_profile
+fi
+
+# cdした後で自動的にlsする
+function chpwd() { ls -1 }
