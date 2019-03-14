@@ -16,15 +16,13 @@ export SAVEHIST=100000
 # 直前と同じコマンドをヒストリに追加しない
 setopt hist_ignore_dups
 
-# 開始と終了時刻を記録
-#setopt EXTENDED_HISTORY
-
 # === Prompt ===
 
 autoload -Uz vcs_info
 setopt prompt_subst
 zstyle ':vcs_info:*' formats '%F{green}[%b]%f'
 zstyle ':vcs_info:*' actionformats '%F{yellow}[%b|%a]%f'
+precmd () { vcs_info }
 
 RPROMPT=""
 RPROMPT+='%F{green}%~%f'
