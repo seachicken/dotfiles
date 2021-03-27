@@ -1,6 +1,9 @@
 [[plugins]]
 repo = 'Shougo/dein.vim'
 
+[[plugins]]
+repo = 'kovisoft/slimv'
+
 [[plugins]] # クリップボード貼り付けによるインデント崩れを抑える
 repo = 'ConradIrwin/vim-bracketed-paste'
 
