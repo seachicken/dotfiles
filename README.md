@@ -1,9 +1,7 @@
 # Dotfiles
 
-### for Mac
+## for Mac
 
-##### 環境構築
-
-1. `brew install zsh`
+1. `brew install tmux`
 1. `brew install peco`
 1. `sh ./install.sh`
