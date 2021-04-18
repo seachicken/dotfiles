@@ -31,6 +31,8 @@ RPROMPT+='${vcs_info_msg_0_}'
 # === Alias ===
 
 alias ll='ls -la'
+alias g='git'
+alias gs='git status'
 alias gg='git log --graph --oneline'
 
 # === Keybinding ===
