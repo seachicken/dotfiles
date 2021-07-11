@@ -45,6 +45,10 @@ set noswapfile
 " yankをクリップボードにもコピー
 set clipboard=unnamed
 
+" マウス操作を有効化
+set mouse=a
+set ttymouse=sgr
+
 " ステータスラインの表示
 set laststatus=2
 
