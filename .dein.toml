@@ -30,12 +30,12 @@ repo = 'cespare/vim-toml'
 on_ft = 'toml'
 
 [[plugins]] # カラースキーマ
-repo = 'w0ng/vim-hybrid'
+repo = 'sainnhe/sonokai'
 hook_add = '''
-  set background=dark
+  let g:sonokai_disable_italic_comment = 1
   " colorscheme 設定は source 後に行う必要があるので VimEnter で行う。
   " 但し Colorscheme イベントの発生が抑制されないよう nested を付ける。
-  au MyAutoCmd VimEnter * nested colorscheme hybrid
+  au MyAutoCmd VimEnter * nested colorscheme sonokai
 '''
 
 [[plugins]] # インデントの色
