@@ -42,6 +42,13 @@ endif
 " バックアップ(.swp）不要 
 set noswapfile
 
+" アンドゥの永続化
+set undofile
+if !isdirectory(expand("$HOME/.vim/undodir"))
+  call mkdir(expand("$HOME/.vim/undodir"), "p")
+endif
+set undodir=$HOME/.vim/undodir
+
 " yankをクリップボードにもコピー
 set clipboard=unnamed
 
