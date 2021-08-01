@@ -56,6 +56,10 @@ set clipboard=unnamed
 set mouse=a
 set ttymouse=sgr
 
+" :e でファイル名を補完する
+set wildmenu
+set wildmode=list:longest,full
+
 " ステータスラインの表示
 set laststatus=2
 
