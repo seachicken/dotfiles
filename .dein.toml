@@ -8,12 +8,15 @@ repo = 'kovisoft/slimv'
 repo = 'ConradIrwin/vim-bracketed-paste'
 
 [[plugins]]
+repo = 'ctrlpvim/ctrlp.vim'
+
+[[plugins]]
 repo = 'Shougo/neosnippet-snippets'
 
-# 補完
 [[plugins]]
 repo = 'Shougo/neocomplete.vim'
 on_i = 1
+
 [[plugins]] # JavaScript
 repo = 'ternjs/tern_for_vim'
 build = 'npm install'
