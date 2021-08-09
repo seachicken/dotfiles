@@ -8,6 +8,9 @@ repo = 'kovisoft/slimv'
 repo = 'ConradIrwin/vim-bracketed-paste'
 
 [[plugins]]
+repo = 'easymotion/vim-easymotion'
+
+[[plugins]]
 repo = 'ctrlpvim/ctrlp.vim'
 
 [[plugins]]
