@@ -60,6 +60,10 @@ set ttymouse=sgr
 set wildmenu
 set wildmode=list:longest,full
 
+" 折り畳み
+set foldmethod=indent
+autocmd BufRead * normal zR
+
 " ステータスラインの表示
 set laststatus=2
 
