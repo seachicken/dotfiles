@@ -14,15 +14,10 @@ repo = 'easymotion/vim-easymotion'
 repo = 'ctrlpvim/ctrlp.vim'
 
 [[plugins]]
-repo = 'Shougo/neosnippet-snippets'
-
-[[plugins]]
-repo = 'Shougo/neocomplete.vim'
-on_i = 1
-
-[[plugins]] # JavaScript
-repo = 'ternjs/tern_for_vim'
-build = 'npm install'
+repo = 'ycm-core/YouCompleteMe'
+merged = 0
+timeout = 300
+build = './install.py'
 
 [[plugins]] # カーソル位置によってftを自動切り替え
 repo = 'osyo-manga/vim-precious'
