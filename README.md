@@ -10,4 +10,5 @@
    1. `prefix + I`
 1. `brew install tig`
 1. `brew install peco`
+1. `brew install jump`
 1. `sh ./install.sh`

@@ -52,6 +52,9 @@ function peco-history-selection() {
 }
 zle -N peco-history-selection
 
+# jump
+eval "$(jump shell zsh)"
+
 # === Other ===
 
 # 環境変数の適用
