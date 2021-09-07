@@ -60,10 +60,6 @@ set ttymouse=sgr
 set wildmenu
 set wildmode=list:longest,full
 
-" 折り畳み
-set foldmethod=indent
-autocmd BufRead * normal zR
-
 " ステータスラインの表示
 set laststatus=2
 
@@ -83,6 +79,8 @@ let g:indent_guides_enable_on_vim_startup = 1
 let g:indent_guides_auto_colors = 0
 autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  ctermbg=236 
 autocmd VimEnter,Colorscheme * :hi IndentGuidesEven ctermbg=black 
+
+let mapleader = ','
 
 " Lispの設定
 let g:slimv_swank_cmd = "!ros -e '(ql:quickload :swank) (swank:create-server)' wait > /dev/null 2> /dev/null &"
