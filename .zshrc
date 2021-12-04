@@ -61,6 +61,9 @@ eval "$(jump shell zsh)"
 if [ -e ~/.bash_profile ]; then
   source ~/.bash_profile
 fi
+if [ -e ~/.zprofile ]; then
+  source ~/.zprofile
+fi
 
 # cdした後で自動的にlsする
 function chpwd() { ls -1 }
