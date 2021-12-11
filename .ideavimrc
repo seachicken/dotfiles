@@ -1,2 +1,3 @@
 " yankをクリップボードにもコピー
 set clipboard=unnamed
+set easymotion
