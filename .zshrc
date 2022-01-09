@@ -67,3 +67,6 @@ fi
 
 # cdした後で自動的にlsする
 function chpwd() { ls -1 }
+
+# ctrl+dの誤操作でシェルが終了しないようにする
+set -o ignoreeof
