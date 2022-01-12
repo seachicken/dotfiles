@@ -24,9 +24,7 @@ zstyle ':vcs_info:*' formats '%F{green}[%b]%f'
 zstyle ':vcs_info:*' actionformats '%F{yellow}[%b|%a]%f'
 precmd () { vcs_info }
 
-RPROMPT=""
-RPROMPT+='%F{green}%(5~|%-1~/…/%3~|%4~)%f'
-RPROMPT+='${vcs_info_msg_0_}'
+RPROMPT='${vcs_info_msg_0_}'
 
 # === Alias ===
 
