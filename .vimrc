@@ -66,6 +66,11 @@ set laststatus=2
 " シンタックスハイライト
 syntax on
 
+" 検索
+set hlsearch
+nnoremap <esc><esc> :silent! nohls<cr>
+set incsearch
+
 " 行番号の表示
 set number
 
