@@ -38,6 +38,8 @@ alias gg='git log --graph --oneline'
 
 # === Keybinding ===
 
+bindkey "^P" history-beginning-search-backward
+bindkey "^N" history-beginning-search-forward
 bindkey '^R' peco-history-selection
 
 # === Plugins ===
