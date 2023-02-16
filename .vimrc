@@ -85,6 +85,9 @@ let g:indent_guides_auto_colors = 0
 autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  ctermbg=236 
 autocmd VimEnter,Colorscheme * :hi IndentGuidesEven ctermbg=black 
 
+" コード補完
+let g:ycm_autoclose_preview_window_after_insertion = 1
+
 " Lispの設定
 let g:slimv_swank_cmd = "!ros -e '(ql:quickload :swank) (swank:create-server)' wait > /dev/null 2> /dev/null &"
 let g:slimv_lisp = 'ros run'
