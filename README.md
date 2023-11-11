@@ -4,6 +4,7 @@
 
 1. `sh ./install.sh`
 1. `brew install tig peco jump`
+1. `brew tap homebrew/cask-fonts && brew install --cask font-fira-code-nerd-font`
 1. tmux
    1. `brew install tmux`
    1. `git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm`
