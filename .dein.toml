@@ -60,6 +60,9 @@ let g:lightline = {
 '''
 
 [[plugins]]
+repo = 'preservim/nerdtree'
+
+[[plugins]]
 repo = 'github/copilot.vim'
 hook_add = '''
 imap <silent><script><expr> <C-J> copilot#Accept("\<CR>")
