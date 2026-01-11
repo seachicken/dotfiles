@@ -4,6 +4,7 @@
 
 1. `sh ./install.sh`
 1. `brew install tig peco jump`
+1. Compile YouCompleteMe with [GitHub - YouCompleteMe](https://github.com/ycm-core/YouCompleteMe?tab=readme-ov-file#macos)
 1. `brew tap homebrew/cask-fonts && brew install --cask font-fira-code-nerd-font`
 1. tmux
    1. `brew install tmux`
