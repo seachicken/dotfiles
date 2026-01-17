@@ -61,6 +61,9 @@ let g:lightline = {
 
 [[plugins]]
 repo = 'preservim/nerdtree'
+hook_add = '''
+let g:NERDTreeShowHidden = 1
+'''
 
 [[plugins]]
 repo = 'github/copilot.vim'
