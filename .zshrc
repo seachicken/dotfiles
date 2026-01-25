@@ -35,6 +35,7 @@ alias gd='git diff'
 alias ga='git add'
 alias gc='git commit'
 alias gg='git log --graph --oneline'
+alias k='kubectl'
 
 # === Keybinding ===
 
